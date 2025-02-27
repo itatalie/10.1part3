@@ -1,5 +1,6 @@
 from typing import Union
 
+
 def obfuscate_card_number(card_num: str) -> Union[str, str]:
     """
     Маскирует номер карты.
@@ -24,4 +25,3 @@ def obfuscate_account_number(account_num: str) -> Union[str, str]:
     if len(account_num) <= 4:
         return f"**{account_num[-2:]}"
     return f"**{account_num[-4:]}"
-
